@@ -9,7 +9,7 @@ import { Route, Link } from "react-router-dom"
 const App = () => {
   return (
 
-<div className="App" style={{backgroundImage: "url(https://i.pinimg.com/originals/4e/d3/cc/4ed3ccdc743bc7cafc7463c56bc51bed.jpg)", height: "800px"}}>
+<div className="App" style={{backgroundImage: "url(https://i.pinimg.com/originals/4e/d3/cc/4ed3ccdc743bc7cafc7463c56bc51bed.jpg)", height: "1200px"}}>
 
 
 <nav 

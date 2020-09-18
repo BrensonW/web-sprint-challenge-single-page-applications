@@ -221,7 +221,7 @@ const Pizza = (props) => {
                 </div>
 
                 <div className="specialrequest" style={{marginTop: "3%"}}>
-                        <h4 style={{marginBottom: "3%", textAlign: "center"}}>Special Requests</h4>
+                        <h4 style={{marginBottom: "3%", textAlign: "center", color: "#d62828"}}>Special Requests</h4>
                         <FormField
                             style={{width: "100%", height: "150px"}}
                             value={pizzaOrder.specialrequest.pizzaChange}
