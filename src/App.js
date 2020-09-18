@@ -5,25 +5,26 @@ import Pizza from "./Pizza"
 import Confirmation from "./Confirmation"
 import { Route, Link } from "react-router-dom"
 
+
 const App = () => {
   return (
 
-<div className="App" style={{backgroundImage: "url(https://i.pinimg.com/originals/4e/d3/cc/4ed3ccdc743bc7cafc7463c56bc51bed.jpg)", height: "790px"}}>
+<div className="App" style={{backgroundImage: "url(https://i.pinimg.com/originals/4e/d3/cc/4ed3ccdc743bc7cafc7463c56bc51bed.jpg)", height: "800px"}}>
 
 
 <nav 
 style={{backgroundColor: "#fcbf49", display: "flex", flexFlow: "row"}}>
   <h1 className="sitename" 
-  style={{marginLeft: "15%", marginTop: "1%", color: "#d62828", textShadow: "2px 2px black"}}>
+  style={{marginLeft: "5%",  color: "#d62828", textShadow: "3px 3px black"}}>
   Lambda Eats
   </h1>
 
-  <div className="nav-links" style={{marginLeft: "39%", marginTop: "2%"}}>
+  <div className="nav-links" style={{marginLeft: "55%", marginTop: "1%"}}>
     <Link to="/" 
-    style={{border: "2px groove black", fontSize: "1.5rem", textDecoration: "none",color: "#d62828", textShadow: "1px 1px black", backgroundColor: "#e9c46a"}}>Home</Link>
+    style={{border: "5px groove black", fontSize: "1.5rem",  textDecoration: "none",color: "#d62828", textShadow: "2px 1px black", backgroundColor: "#e9c46a", marginRight: "5%", marginLeft: "-10%"}}>Home</Link>
 
     <Link to="/Pizza" 
-    style={{border: "2px groove black", fontSize: "1.5rem", textDecoration: "none", color: "#d62828", textShadow: "1px 1px black", backgroundColor: "#e9c46a"}}>Order Now</Link>
+    style={{border: "5px groove black", fontSize: "1.5rem", textDecoration: "none", color: "#d62828", textShadow: "2px 1px black", backgroundColor: "#e9c46a"}}>Order Now</Link>
   </div>
 </nav>
 
