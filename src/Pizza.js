@@ -39,12 +39,15 @@ const Pizza = (props) => {
            `Yay Your Order Has Been Placed for ${pizzaOrder.name}!`
 
        )
+
        console.log("Pizza Order Submitted")
        axios
         .post("https://reqres.in/api/users", pizzaOrder)
         .then(() => console.log("Order Submitted Working On It"))
         .catch(err => console.log(err, "Pizza Order Not Submitted"));
    };
+   
+
 
    const pizzaChange = e => {
        setPizzaOrder({
@@ -114,17 +117,33 @@ const Pizza = (props) => {
                         </select>
 
                 <div className="cheese" style={{marginTop: "3%"}}>
+                    <h4>Cheese</h4>
 
                         <FormField 
                             value={pizzaOrder.cheese}
                             onChange={pizzaChange}
                             name="yes-cheese"
-                            label="Cheese"
+                            label="Chedder Cheese"
+                            type="checkbox"
+                        />
+                        <FormField 
+                            value={pizzaOrder.cheese}
+                            onChange={pizzaChange}
+                            name="yes-cheese"
+                            label="American Cheese"
+                            type="checkbox"
+                        />
+                        <FormField 
+                            value={pizzaOrder.cheese}
+                            onChange={pizzaChange}
+                            name="yes-cheese"
+                            label="Provolone"
                             type="checkbox"
                         />
                 </div>
 
                 <div className="sauce"style={{marginTop: "3%"}}>
+                    <h4>Sauce</h4>
 
                         <FormField
                             value={pizzaOrder.sauce}
@@ -133,9 +152,17 @@ const Pizza = (props) => {
                             label="Robust Marinara Sauce"
                             type="checkbox"
                         />
+                        <FormField
+                            value={pizzaOrder.sauce}
+                            onChange={pizzaChange}
+                            name="yes-sauce"
+                            label="White sauce"
+                            type="checkbox"
+                        />
                 </div>
 
-                <div className="meat"style={{marginTop: "3%", display: "flex", flexFlow: "row"}}>
+                <div className="meat"style={{marginTop: "3%", display: "flex", flexFlow: "column"}}>
+                    <h4>Meats</h4>
 
                         <FormField
                             value={pizzaOrder.meat}
@@ -163,7 +190,8 @@ const Pizza = (props) => {
                         />
                 </div>
 
-                <div className="veggies"style={{marginTop: "3%", display: "flex", flexFlow: "row"}}>
+                <div className="veggies"style={{marginTop: "3%", display: "flex", flexFlow: "column"}}>
+                    <h4>Veggies</h4>
 
                         <FormField
                             value={pizzaOrder.veggies} 
